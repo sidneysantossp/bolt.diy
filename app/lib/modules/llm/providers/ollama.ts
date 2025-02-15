@@ -27,7 +27,7 @@ export interface OllamaApiResponse {
   models: OllamaModel[];
 }
 
-export const DEFAULT_NUM_CTX = process?.env?.DEFAULT_NUM_CTX ? parseInt(process.env.DEFAULT_NUM_CTX, 10) : 32768;
+export const DEFAULT_NUM_CTX = process?.env?.DEFAULT_NUM_CTX ? parseInt(process.env.DEFAULT_NUM_CTX, 10) : 65536;
 
 export default class OllamaProvider extends BaseProvider {
   name = 'Ollama';
